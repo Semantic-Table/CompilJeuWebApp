@@ -36,9 +36,9 @@ public class HelloServlet extends HttpServlet {
             }
         }
         if (plateau.isTour()) {
-            request.setAttribute("joueur", "1");
+            request.setAttribute("joueur", "C'est au tour des blancs");
         } else {
-            request.setAttribute("joueur", "2");
+            request.setAttribute("joueur", "C'est au tour des noirs");
         }
         request.setAttribute("plateau", this.plateau.getPlateau());
         rd = request.getRequestDispatcher("/WEB-INF/index.jsp");
