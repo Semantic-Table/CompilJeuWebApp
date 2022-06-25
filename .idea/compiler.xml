@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ReversiWebApp" />
+        <module name="CompilJeuWebApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ReversiWebApp" target="1.8" />
+      <module name="CompilJeuWebApp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

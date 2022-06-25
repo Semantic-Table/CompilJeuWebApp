@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ReversiWebApp.iml" filepath="$PROJECT_DIR$/ReversiWebApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CompilJeuWebApp.iml" filepath="$PROJECT_DIR$/CompilJeuWebApp.iml" />
     </modules>
   </component>
 </project>

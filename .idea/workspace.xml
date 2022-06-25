@@ -10,9 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4b9a1b7-9b83-45f2-984f-bdb6c0b48ef8" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/servlets/Accueil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/servlets/Chifoumi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/chifoumiChoix.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/chifoumiResultat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/reversi.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/chi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/fou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/mi.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/servlets/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/servlets/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/bo/PlateauDeJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/bo/PlateauDeJeu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/servlets/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/servlets/Reversi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -67,6 +77,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\marvi\IdeaProjects\ReversiWebApp\src\main\webapp\img" />
+      <recent name="C:\Users\marvi\IdeaProjects\ReversiWebApp\src\main\webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\marvi\IdeaProjects\ReversiWebApp\src\main\webapp\WEB-INF" />
@@ -74,7 +85,7 @@
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9">
     <configuration name="fr.afpa.reversiwebapp.exceptions in ReversiWebApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReversiWebApp" />
+      <module name="CompilJeuWebApp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="fr.afpa.reversiwebapp.exceptions.*" />
@@ -83,6 +94,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="fr.afpa.reversiwebapp.exceptions" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="CompilJeuWebApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="CompilJeuWebApp" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,6 +217,9 @@
       <option name="presentableId" value="Default" />
       <updated>1656084320993</updated>
       <workItem from="1656084322344" duration="11085000" />
+      <workItem from="1656104987696" duration="7000" />
+      <workItem from="1656166568581" duration="403000" />
+      <workItem from="1656167006281" duration="7618000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1656094508747</created>

@@ -10,8 +10,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-@WebServlet("/Jeu")
-public class HelloServlet extends HttpServlet {
+@WebServlet("/Reversi")
+public class Reversi extends HttpServlet {
     private PlateauDeJeu plateau;
 
     public void init() {
@@ -22,6 +22,7 @@ public class HelloServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         RequestDispatcher rd;
+
         if (request.getParameter("reset") != null) {
             this.init();
         }
@@ -36,12 +37,14 @@ public class HelloServlet extends HttpServlet {
             }
         }
         if (plateau.isTour()) {
-            request.setAttribute("joueur", "C'est au tour des blancs");
-        } else {
             request.setAttribute("joueur", "C'est au tour des noirs");
+        } else {
+            request.setAttribute("joueur", "C'est au tour des blancs");
         }
         request.setAttribute("plateau", this.plateau.getPlateau());
-        rd = request.getRequestDispatcher("/WEB-INF/index.jsp");
+        request.setAttribute("scoreBlanc", plateau.scoreBlanc());
+        request.setAttribute("scoreNoir", plateau.scoreNoir());
+        rd = request.getRequestDispatcher("/WEB-INF/reversi.jsp");
         rd.forward(request, response);
     }
 

@@ -4,11 +4,12 @@ import fr.afpa.reversiwebapp.except.MissposeException;
 import fr.afpa.reversiwebapp.except.OccupiedException;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class PlateauDeJeu {
-    private final String empty = "<img class='case' src='img/empty.png'>";
-    private final String white = "<img class='case' src='img/white.png'>";
-    private final String black = "<img class='case' src='img/black.png'>";
+    private final String EMPTY = "<img class='case' src='img/empty.png'>";
+    private final String WHITE = "<img class='case' src='img/white.png'>";
+    private final String BLACK = "<img class='case' src='img/black.png'>";
     private String[][] plateau = new String[8][8];
     private int nbTours;
     private int blanc;
@@ -18,12 +19,12 @@ public class PlateauDeJeu {
     public PlateauDeJeu() {
         nbTours = 59;
         for (String[] cs : plateau) {
-            Arrays.fill(cs, empty);
+            Arrays.fill(cs, EMPTY);
         }
-        plateau[3][4] = white;
-        plateau[4][3] = white;
-        plateau[3][3] = black;
-        plateau[4][4] = black;
+        plateau[3][4] = WHITE;
+        plateau[4][3] = WHITE;
+        plateau[3][3] = BLACK;
+        plateau[4][4] = BLACK;
     }
 
     public void afficherPlateau() {
@@ -42,29 +43,39 @@ public class PlateauDeJeu {
         }
     }
 
-    public void afficherScore() {
-        this.noir = 0;
+    public  int scoreBlanc(){
         this.blanc = 0;
-        for (String[] cs : plateau) {
-            for (String c : cs) {
-                if (c == black)
-                    this.noir++;
-                if (c == black)
+        for (String[] cs: plateau) {
+            for (String c: cs) {
+                if (Objects.equals(c, WHITE)){
                     this.blanc++;
+                }
             }
         }
-        System.out.println(this.noir + " 2");
-        System.out.println(this.blanc + " 1");
+        return this.blanc;
     }
+
+    public int scoreNoir(){
+        this.noir = 0;
+        for (String[] cs: plateau) {
+            for (String c: cs) {
+                if (Objects.equals(c, BLACK)){
+                    this.noir++;
+                }
+            }
+        }
+        return this.noir;
+    }
+
 
     public void setPlateau(int x, int y) throws MissposeException, OccupiedException {
         String couleur;
         if (this.tour) {
-            couleur = white;
+            couleur = BLACK;
         } else {
-            couleur = black;
+            couleur = WHITE;
         }
-        if (plateau[y][x] == empty) {
+        if (plateau[y][x] == EMPTY) {
             plateau[y][x] = couleur;
             this.miseAJour(x, y);
         } else {
@@ -75,7 +86,7 @@ public class PlateauDeJeu {
     }
 
     public void correction(int x, int y) {
-        plateau[y][x] = empty;
+        plateau[y][x] = EMPTY;
     }
 
     public void autrePion() {
@@ -94,7 +105,7 @@ public class PlateauDeJeu {
         try {
             while (!trou && !ami) {
                 xi++;
-                if (this.plateau[yi][xi] == empty) {
+                if (this.plateau[yi][xi] == EMPTY) {
                     trou = true;
                 } else if (this.plateau[yi][xi] == this.plateau[y][x]) {
                     ami = true;
@@ -103,7 +114,7 @@ public class PlateauDeJeu {
                 }
 
             }
-            if (ami == true && trou == false && cptnmy > 0) {
+            if (ami && !trou && cptnmy > 0) {
                 reussite = true;
                 for (int i = x; i < xi; i++) {
                     this.plateau[y][i] = this.plateau[y][x];
@@ -123,7 +134,7 @@ public class PlateauDeJeu {
         try {
             while (!trou && !ami) {
                 xi--;
-                if (this.plateau[yi][xi] == empty) {
+                if (this.plateau[yi][xi] == EMPTY) {
                     trou = true;
                 } else if (this.plateau[yi][xi] == this.plateau[y][x]) {
                     ami = true;
@@ -132,7 +143,7 @@ public class PlateauDeJeu {
                 }
 
             }
-            if (ami == true && trou == false && cptnmy > 0) {
+            if (ami && !trou && cptnmy > 0) {
                 reussite = true;
                 for (int i = x; i > xi; i--) {
                     this.plateau[y][i] = this.plateau[y][x];
@@ -150,7 +161,7 @@ public class PlateauDeJeu {
         try {
             while (!trou && !ami) {
                 yi++;
-                if (this.plateau[yi][xi] == empty) {
+                if (this.plateau[yi][xi] == EMPTY) {
                     trou = true;
                 } else if (this.plateau[yi][xi] == this.plateau[y][x]) {
                     ami = true;
@@ -177,7 +188,7 @@ public class PlateauDeJeu {
         try {
             while (!trou && !ami) {
                 yi--;
-                if (this.plateau[yi][xi] == empty) {
+                if (this.plateau[yi][xi] == EMPTY) {
                     trou = true;
                 } else if (this.plateau[yi][xi] == this.plateau[y][x]) {
                     ami = true;
@@ -206,7 +217,7 @@ public class PlateauDeJeu {
             while (!trou && !ami) {
                 yi--;
                 xi--;
-                if (this.plateau[yi][xi] == empty) {
+                if (this.plateau[yi][xi] == EMPTY) {
                     trou = true;
                 } else if (this.plateau[yi][xi] == this.plateau[y][x]) {
                     ami = true;
@@ -236,7 +247,7 @@ public class PlateauDeJeu {
             while (!trou && !ami) {
                 yi--;
                 xi++;
-                if (this.plateau[yi][xi] == empty) {
+                if (this.plateau[yi][xi] == EMPTY) {
                     trou = true;
                 } else if (this.plateau[yi][xi] == this.plateau[y][x]) {
                     ami = true;
@@ -266,7 +277,7 @@ public class PlateauDeJeu {
             while (!trou && !ami) {
                 yi++;
                 xi++;
-                if (this.plateau[yi][xi] == empty) {
+                if (this.plateau[yi][xi] == EMPTY) {
                     trou = true;
                 } else if (this.plateau[yi][xi] == this.plateau[y][x]) {
                     ami = true;
@@ -296,7 +307,7 @@ public class PlateauDeJeu {
             while (!trou && !ami) {
                 yi++;
                 xi--;
-                if (this.plateau[yi][xi] == empty) {
+                if (this.plateau[yi][xi] == EMPTY) {
                     trou = true;
                 } else if (this.plateau[yi][xi] == this.plateau[y][x]) {
                     ami = true;
@@ -328,7 +339,7 @@ public class PlateauDeJeu {
         for (int i = 0; i < this.plateau.length; i++) {
             affPlateau += "<tr>";
             for (int j = 0; j < this.plateau.length; j++) {
-                affPlateau += "<td><a href='Jeu?x="+j+"&y="+i+"'>"+ this.plateau[i][j] +"</a></td>";
+                affPlateau += "<td><a href='Reversi?x="+j+"&y="+i+"'>"+ this.plateau[i][j] +"</a></td>";
              }
             affPlateau += "</tr>";
         }

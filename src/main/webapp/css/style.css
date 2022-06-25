@@ -1,17 +1,49 @@
 * {
     margin: 0px;
 }
-table {
-    background: url("/img/empty.png") repeat;
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 2em);
+    justify-content: space-between;
+    padding: 1em;
 }
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    background-color: black;
+    padding-left: 3px;
+}
+
 td {
-    border: black 1px solid;
+    /*border: black 1px solid;*/
     padding: 0px;
     margin: 0px;
-    width: 50px;
-    height: 50px;
+    width: min(7vh,9vw);
+    height: min(7vh,9vw);
 }
+tr {
+    padding: 0px;
+}
+
 .case {
-    width: 50px;
-    height: 50px;
+    width: min(7vh,9vw);
+    height: min(7vh,9vw);
 }
+
+.jeu {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+.menu {
+    margin-top: 10px;
+}
+
