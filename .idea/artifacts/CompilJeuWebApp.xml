@@ -1,13 +1,13 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="ReversiWebApp">
-    <output-path>$PROJECT_DIR$/out/artifacts/ReversiWebApp</output-path>
+  <artifact type="exploded-war" name="CompilJeuWebApp">
+    <output-path>$PROJECT_DIR$/out/artifacts/CompilJeuWebApp</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="CompilJeuWebApp" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="ReversiWebApp/web/Web" />
+      <element id="javaee-facet-resources" facet="CompilJeuWebApp/web/Web" />
     </root>
   </artifact>
 </component>

@@ -32,26 +32,50 @@
 
 %>
 <body>
-<h1>Jeu du Reversi</h1>
-<div>
-    <p><%=joueur%>
-    </p>
-    <p><%=scoreBlanc%>
-    </p>
-    <p><%=scoreNoir%>
-    </p>
+<div class="app reversi">
+    <div class="titleReversiPage"><h1>&lt;jeu_du_reversi&gt;</h1></div>
+    <div class="divReversi">
+        <div class="board">
+            <div class="joueur">
+                <p>
+                    <%=joueur%>
+                </p>
+            </div>
+            <div class="scoreAndBoard">
+                <div>
+                    <p><%=scoreBlanc%>
+                    </p>
+
+                </div>
+
+
+                <div class="table">
+                    <table>
+                        <%=plateau%>
+                    </table>
+                </div>
+                <div>
+
+                    <p><%=scoreNoir%>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div>
+            <p class="menu"><a href="Reversi?reset=true"><button>Reset</button></a>
+
+                <a href="Accueil"><button>Accueil</button></a> </p>
+        </div>
+
+
+
+
+    </div>
+
 </div>
 
-
-<div>
-    <table>
-        <%=plateau%>
-    </table>
-    <p class="menu"><button><a href="Reversi?reset=true">==> reset de la planche <==</a> </button>
-
-        <a href="Accueil"><button>==> Retour a l'accueil <==</button></a> </p>
-
-
-</div>
 </body>
 </html>

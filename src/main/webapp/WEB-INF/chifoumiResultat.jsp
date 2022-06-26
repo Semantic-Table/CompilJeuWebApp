@@ -56,20 +56,36 @@
     }
 
 %>
-<h1>------------ JEU DU CHIFOUMI ------------</h1>
+<div class="app chifoumi">
+    <div class="titleChifoumiPage">
+        <h1>&lt;jeu_du_chifoumi&gt;</h1>
+    </div>
+    <div class="divChifoumi">
+        <div class="jeu">
+            <div>
+                <p><%=resultat%></p>
+            </div>
+            <div class="resultatCombat">
+                <div class="image">
+                    <img class="imgChifoumi" src="img/<%= imgJ %> " alt="">
+                </div>
+                <div class="image">
+                    <img class="imgChifoumi" src="img/<%= imgO %> " alt="">
+                </div>
+            </div>
+            <div>
+                <p><%=resultat%></p>
+            </div>
 
-<div class="jeu">
-    <div class="image">
-        <img src="img/<%= imgJ %> " alt="">
+        </div>
+
+        <p class="menu"><a href="Chifoumi"><button>Rejouer</button></a></p>
     </div>
-    <div class="image">
-        <img src="img/<%= imgO %> " alt="">
-    </div>
+
 </div>
-<p>
-<%=resultat%>
-</p>
-<p class="menu"><a href="Chifoumi"><button>==> REJOUER <== </button></a></p>
+
+
+
 
 </body>
 </html>

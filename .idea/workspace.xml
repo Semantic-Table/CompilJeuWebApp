@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ReversiWebApp" />
+      <artifact name="CompilJeuWebApp" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,18 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4b9a1b7-9b83-45f2-984f-bdb6c0b48ef8" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/servlets/Accueil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/servlets/Chifoumi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/chifoumiChoix.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/chifoumiResultat.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/reversi.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/chi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/fou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/mi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/anim.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/reversi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ReversiWebApp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CompilJeuWebApp.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/bo/PlateauDeJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/bo/PlateauDeJeu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/servlets/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/afpa/reversiwebapp/servlets/Reversi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/chifoumiChoix.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/chifoumiChoix.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/chifoumiResultat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/chifoumiResultat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/reversi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/reversi.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +32,7 @@
         <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -64,11 +62,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/marvi/IdeaProjects/ReversiWebApp/src/main/webapp/img",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -81,10 +80,11 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\marvi\IdeaProjects\ReversiWebApp\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\marvi\IdeaProjects\ReversiWebApp\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9">
-    <configuration name="fr.afpa.reversiwebapp.exceptions in ReversiWebApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="fr.afpa.reversiwebapp.exceptions in ReversiWebApp" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CompilJeuWebApp" />
       <extension name="coverage">
         <pattern>
@@ -98,25 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="CompilJeuWebApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="CompilJeuWebApp" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="ReversiWebApp">
+        <artifact name="CompilJeuWebApp">
           <settings>
-            <option name="CONTEXT_PATH" value="/ReversiWebApp" />
+            <option name="CONTEXT_PATH" value="/CompilJeuWebApp" />
           </settings>
         </artifact>
       </deployment>
@@ -194,7 +181,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="ReversiWebApp" />
+          <artifact name="CompilJeuWebApp" />
         </option>
       </method>
     </configuration>
@@ -202,11 +189,6 @@
       <item itemvalue="JUnit.fr.afpa.reversiwebapp.exceptions in ReversiWebApp" />
       <item itemvalue="Tomcat Server.Tomcat 9" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.fr.afpa.reversiwebapp.exceptions in ReversiWebApp" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -219,7 +201,8 @@
       <workItem from="1656084322344" duration="11085000" />
       <workItem from="1656104987696" duration="7000" />
       <workItem from="1656166568581" duration="403000" />
-      <workItem from="1656167006281" duration="7618000" />
+      <workItem from="1656167006281" duration="8142000" />
+      <workItem from="1656243384708" duration="12255000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1656094508747</created>
