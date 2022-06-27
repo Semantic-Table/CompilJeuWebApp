@@ -10,11 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4b9a1b7-9b83-45f2-984f-bdb6c0b48ef8" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/AccueilScreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ChifoumiScreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ResultatScreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ReversiScreen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,16 +52,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/marvi/IdeaProjects/ReversiWebApp/src/main/webapp/img",
+    "last_opened_file_path": "C:/Users/stagiaire/IdeaProjects/CompilJeuWebApp",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -202,6 +197,8 @@
       <workItem from="1656273029590" duration="612000" />
       <workItem from="1656309527786" duration="86000" />
       <workItem from="1656316641120" duration="1208000" />
+      <workItem from="1656327593032" duration="561000" />
+      <workItem from="1656328254162" duration="235000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1656094508747</created>
