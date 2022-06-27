@@ -10,8 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4b9a1b7-9b83-45f2-984f-bdb6c0b48ef8" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/chifoumiResultat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/chifoumiResultat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/reversi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/reversi.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/AccueilScreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ChifoumiScreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ResultatScreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ReversiScreen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +63,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -194,7 +198,10 @@
       <workItem from="1656104987696" duration="7000" />
       <workItem from="1656166568581" duration="403000" />
       <workItem from="1656167006281" duration="8142000" />
-      <workItem from="1656243384708" duration="12598000" />
+      <workItem from="1656243384708" duration="12686000" />
+      <workItem from="1656273029590" duration="612000" />
+      <workItem from="1656309527786" duration="86000" />
+      <workItem from="1656316641120" duration="1208000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1656094508747</created>
